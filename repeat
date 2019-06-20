@@ -1,0 +1,15 @@
+    
+x=int(input())
+y56=list(map(int,input().split()))
+z=[]
+for p in range(x):
+    for q in range(p+1,len(y56)):
+        if(y56[q]==y56[p]):
+          z.append(y56[p])
+if (len(z)==0):
+    print("unique")
+else:
+    z.sort()
+    r=set(z)
+    for p in r:
+        print(p,end=" ")
